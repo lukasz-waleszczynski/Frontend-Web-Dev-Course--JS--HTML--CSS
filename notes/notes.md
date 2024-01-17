@@ -109,4 +109,37 @@ console.log(secondArray[3][1]); // pierwsza cyfra to wskazanie zagnieżdżonej l
 ```
 
 
+Obiekty (krótki przykład w temacie zmiennych) (bardzo ważne zagadnienie). Można powiedzieć, że są to mniejsze pojemniki w środku jednego dużego pojemnika, które zawierają konkretne obiekty.
+
+```JavaScript
+const objectVariable = { prop1: 20, prop2: 50, prop3: 30 }; // obiekt tworzy sie w nawiasach klamrowych, przypisując wartość do klucza (klucz: wartość)
+objectVariable['prop1']; // sposób na poranie danych znajdujących się w niezagnieżdżonym obiekcie
+```
+
+
+Aby dostać się do konkretnej wartości w obiekcie, nie możemy tego zrobić nawiasem kwadratowym [1] jak w przypadku listy. Musimy zrobić to poprzez notację kropkową:
+
+```JavaScript
+objectVariable.prop1
+```
+
+
+Obiekty mogą być nieskończenie zagnieżdżone:
+
+```JavaScript
+const nestedObject = {
+    layer1: {
+        layer2: {
+            layer3: {
+                targetValue:20
+            }
+        }
+    }
+};
+nestedObject.layer1.layer2.layer3.targetValue; // w ten sposób możemy pobrać zagnieżdżony obiekt
+```
+
+
+Funkcje (krótki przykład w temacie zmiennych):
+
 
